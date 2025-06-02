@@ -1,10 +1,3 @@
-Bilkul! Yahan aapke **`README.md`** file ka updated version diya gaya hai, jo aapke current project structure aur single composite screenshot ke hisaab se perfectly aligned hai:
-
----
-
-## `README.md` (Final Updated)
-
-````markdown
 # 🚀 App Deployment in Kubernetes
 
 ## Objective
