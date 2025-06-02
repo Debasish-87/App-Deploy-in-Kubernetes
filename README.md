@@ -1,8 +1,15 @@
-# Build a Kubernetes Cluster Locally with Minikube
+Bilkul! Yahan aapke **`README.md`** file ka updated version diya gaya hai, jo aapke current project structure aur single composite screenshot ke hisaab se perfectly aligned hai:
 
-## 🚀 Objective
+---
 
-Deploy a simple Nginx application in a Kubernetes cluster locally using Minikube. Learn how to manage Kubernetes resources like deployments and services, scale applications, and verify resource states using `kubectl`.
+## `README.md` (Final Updated)
+
+````markdown
+# 🚀 App Deployment in Kubernetes
+
+## Objective
+
+Deploy a simple **Nginx application** in a Kubernetes cluster locally using **Minikube**. Learn how to manage Kubernetes resources like deployments and services, scale applications, and verify resource states using `kubectl`.
 
 ---
 
@@ -18,12 +25,12 @@ Deploy a simple Nginx application in a Kubernetes cluster locally using Minikube
 
 ### 1️⃣ Install Minikube and Start the Cluster
 
-- Installed Minikube and kubectl on Ubuntu.
-- Started the Minikube cluster:
+Installed Minikube and kubectl on Ubuntu.  
+Started the Minikube cluster:
 
-  ```bash
-  minikube start
-  kubectl get nodes
+```bash
+minikube start
+kubectl get nodes
 ````
 
 ---
@@ -52,11 +59,11 @@ spec:
         - containerPort: 80
 ```
 
-* Applied the deployment:
+Applied the deployment:
 
-  ```bash
-  kubectl apply -f deployment.yaml
-  ```
+```bash
+kubectl apply -f deployment.yaml
+```
 
 ---
 
@@ -78,60 +85,59 @@ spec:
     nodePort: 30008
 ```
 
-* Applied the service:
+Applied the service:
 
-  ```bash
-  kubectl apply -f service.yaml
-  ```
+```bash
+kubectl apply -f service.yaml
+```
 
 ---
 
 ### 4️⃣ Verified Resources
 
-* Checked pods, deployments, and services:
+Checked pods, deployments, and services:
 
-  ```bash
-  kubectl get pods
-  kubectl get deployments
-  kubectl get services
-  ```
+```bash
+kubectl get pods
+kubectl get deployments
+kubectl get services
+```
 
-* Described resources for details:
+Described resources for details:
 
-  ```bash
-  kubectl describe deployment nginx-deployment
-  kubectl describe service nginx-service
-  ```
+```bash
+kubectl describe deployment nginx-deployment
+kubectl describe service nginx-service
+```
 
 ---
 
 ### 5️⃣ Scaled the Deployment
 
-* Scaled the Nginx deployment to 4 replicas:
+Scaled the Nginx deployment to 4 replicas:
 
-  ```bash
-  kubectl scale deployment nginx-deployment --replicas=4
-  kubectl get pods
-  ```
+```bash
+kubectl scale deployment nginx-deployment --replicas=4
+kubectl get pods
+```
 
 ---
 
 ### 6️⃣ Checked Logs
 
-* Fetched logs from a running Nginx pod:
+Fetched logs from a running Nginx pod:
 
-  ```bash
-  kubectl logs $(kubectl get pods -l app=nginx -o jsonpath="{.items[0].metadata.name}")
-  ```
+```bash
+kubectl logs $(kubectl get pods -l app=nginx -o jsonpath="{.items[0].metadata.name}")
+```
 
 ---
 
 ## 📸 Screenshots
 
-## Minikube Cluster Status
+### All-in-One Screenshot (Kubernetes Commands and Outputs)
 
-![Minikube Node Running](screenshots/app-deploy-in-Kubernetes.png)
-
+![Kubernetes Resources](screenshots/app-deploy-in-Kubernetes.png)
 
 ---
 
@@ -159,12 +165,7 @@ spec:
 ├── deployment.yaml
 ├── service.yaml
 ├── screenshots/
-│   ├── get-nodes.png
-│   ├── get-pods.png
-│   ├── get-deployments.png
-│   ├── get-services.png
-│   ├── scale-pods.png
-│   └── logs.png
+│   └── app-deploy-in-Kubernetes.png
 └── README.md
 ```
 
@@ -179,6 +180,6 @@ spec:
 
 ## ✍️ Author
 
-Debasish Mohanty
+**Debasish Mohanty**
 
 ---
