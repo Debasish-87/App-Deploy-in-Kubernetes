@@ -130,7 +130,7 @@ spec:
 
 ## Minikube Cluster Status
 
-![Minikube Node Running](./screenshots/app-deploy-in-Kubernetes.png)
+![Minikube Node Running](screenshots/app-deploy-in-Kubernetes.png)
 
 
 ---
